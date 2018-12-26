@@ -1,0 +1,17 @@
+name: link_text
+description: A new Flutter package project.
+version: 0.0.1
+author: Eivy
+homepage: https://github.com/Eivy/link_text
+
+environment:
+  sdk: ">=2.0.0-dev.68.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  url_launcher: ^4.0.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
