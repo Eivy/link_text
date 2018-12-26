@@ -16,7 +16,6 @@ class LinkText extends StatelessWidget {
 	Widget build(BuildContext context) {
 		var children = new List<TextSpan>();
 		var matches = RegExp(r'https?://[a-zA-Z0-9\-%_/=&?.]+').allMatches(this.text).toList();
-		matches.forEach((m) => print(m.end));
 		var links = matches.map<TextSpan>((m) {
 			 var rec = TapGestureRecognizer()..onTap = () async {
             if (await canLaunch(m.group(0))) {
